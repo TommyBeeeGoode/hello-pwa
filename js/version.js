@@ -1,4 +1,3 @@
-// js/version.js
 export async function checkVersion() {
     try {
         const response = await fetch('version.json?' + Date.now());
@@ -11,4 +10,3 @@ export async function checkVersion() {
         console.error('Version check failed:', error);
     }
 }
-

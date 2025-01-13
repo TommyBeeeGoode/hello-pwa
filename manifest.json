@@ -1,0 +1,30 @@
+{
+    "name": "Hello World PWA",
+    "short_name": "Hello PWA",
+    "description": "A simple Progressive Web App example",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#2196F3",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "prefer_related_applications": false,
+    "categories": ["utilities"],
+    "screenshots": [],
+    "shortcuts": [],
+    "lang": "en",
+    "dir": "ltr"
+}

@@ -1,0 +1,127 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Button styles */
+.install-button, .action-button {
+    display: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.install-button:hover, .action-button:hover {
+    background-color: #1976D2;
+}
+
+/* Version info styles */
+.version-info {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.version-info .error {
+    color: #dc3545;
+}
+
+/* Warning message styles */
+.warning-message {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 4px;
+    border: 1px solid #ffeeba;
+    text-align: center;
+}
+
+/* Update notification styles */
+.update-notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    z-index: 1000;
+}
+
+.update-notification button {
+    margin: 5px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.update-notification button:first-of-type {
+    background: #2196F3;
+    color: white;
+}
+
+.update-notification button:last-of-type {
+    background: #e0e0e0;
+}
+
+/* iOS install prompt styles */
+.ios-install-prompt {
+    display: none;
+    background-color: #e8f5fe;
+    color: #0c5460;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 4px;
+    border: 1px solid #bee5eb;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .update-notification {
+        width: 90%;
+        max-width: none;
+    }
+}
+
+/* Status indicators */
+.status-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.status-online {
+    background-color: #28a745;
+}
+
+.status-offline {
+    background-color: #dc3545;
+}
